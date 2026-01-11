@@ -291,7 +291,7 @@ Token Lexer::next() noexcept {
 
 	}
 }
-#include <iostream>
+
 std::ostream& operator<<(std::ostream& os, const Token token) {
 	
 	static const char * type_names[] = {

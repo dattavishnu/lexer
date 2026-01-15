@@ -82,7 +82,7 @@ statement → assignment | expression
 
 assignment → identifier "=" expression
 expression → term (("+" | "-") term)*
-term → factor (("" | "/") factor)
+term → factor (("*" | "/") factor)
 factor → number
 | identifier
 | "(" expression ")"

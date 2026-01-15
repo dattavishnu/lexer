@@ -75,18 +75,15 @@ The parser consumes tokens from the lexer and constructs an **Abstract Syntax Tr
 
 ### Grammar (simplified)
 
-
 ```text
-program → statement*
-statement → assignment | expression
-
 assignment → identifier "=" expression
-expression → term (("+" | "-") term)*
-term → factor (("*" | "/") factor)
-factor → number
-| identifier
-| "(" expression ")"
+expression → term ("+" | "-") term
+term       → factor ("*" | "/") factor
+factor     → number
+           | identifier
+           | "(" expression ")"
 ```
+
 
 
 ### Supported features

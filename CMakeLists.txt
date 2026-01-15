@@ -12,7 +12,7 @@ endif()
 project ("lexer")
 
 # Add source to this project's executable.
-add_executable (lexer "lexer.cpp" "lexer.h")
+add_executable (lexer "lexer.h" "parser.h" "main.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET lexer PROPERTY CXX_STANDARD 20)
